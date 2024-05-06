@@ -36,17 +36,17 @@ THEN I am able to successfully create, update, and delete data in my database.
 - [x] Successfully seed tables
 - [ ] Insomnia requests
     - [ ] categories
-        - [ ] GET
+        - [x] GET
         - [ ] POST
         - [ ] PUT
         - [ ] DELETE
     - [ ] products
-        - [ ] GET
+        - [x] GET
         - [ ] POST
         - [ ] PUT
         - [ ] DELETE
     - [ ] tags
-        - [ ] GET
+        - [x] GET
         - [ ] POST
         - [ ] PUT
         - [ ] DELETE
