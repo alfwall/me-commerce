@@ -32,10 +32,8 @@ THEN I am able to successfully create, update, and delete data in my database.
 ## TODO
 - [x] npm install
 - [x] Rename and edit .env file
-- [ ] Create schema
-    - [ ] Confirm that it seeds properly
-    - [ ] Write tests?
-- [ ] Successfully seed tables
+- [x] Create schema
+- [x] Successfully seed tables
 - [ ] Insomnia requests
     - [ ] categories
         - [ ] GET
