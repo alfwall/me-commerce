@@ -37,7 +37,7 @@ THEN I am able to successfully create, update, and delete data in my database.
 - [ ] Insomnia requests
     - [ ] categories
         - [x] GET all
-        - [ ] GET /:id
+        - [x] GET /:id
         - [ ] POST
         - [ ] PUT
         - [ ] DELETE
