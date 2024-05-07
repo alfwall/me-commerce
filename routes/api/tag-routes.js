@@ -7,6 +7,7 @@ router.get('/', async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   try {
+    console.log("GET TAGS!")
     const tagData = await Tag.findAll({
       include: [{ model: Product }]
     });
@@ -35,8 +36,16 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new tag
+  try {
+    console.log(req.body);
+    const newTagData = await Tag.create(req.body);
+    res.status(200).json(newTagData);
+  }
+  catch(error) {
+    res.status(400).json(error);
+  }
 });
 
 router.put('/:id', (req, res) => {
