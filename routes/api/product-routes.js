@@ -115,8 +115,24 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
+  try {
+    console.log("Attempting to delete Product id " + req.params.id)
+    await Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+    const remainingProductData = await Product.findAll({
+      include: [{ model: Category }, { model: Tag }]
+    });
+    res.status(200).json(remainingProductData);
+  }
+  catch(error) {
+    //console.error(error);
+    res.status(400).json(error);
+  }
 });
 
 module.exports = router;
