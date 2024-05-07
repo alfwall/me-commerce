@@ -50,8 +50,30 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+  try {
+    if (!req.body || !req.body.newName) {
+      throw new Error("Bad body!")
+    }
+    await Category.update(
+      {
+        category_name: req.body.newName
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    );
+    var updatedCategory = await Category.findByPk(req.params.id, {
+      include: [{ model: Product }]
+    });
+    res.status(200).json(updatedCategory);
+  }
+  catch(error) {
+    res.status(400).json(error);
+  }
 });
 
 router.delete('/:id', async (req, res) => {
