@@ -52,8 +52,24 @@ router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete on tag by its `id` value
+  try {
+    console.log("ATtempting to delete tag " + req.params.id)
+    await Tag.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+    remainingTagData = await Tag.findAll({
+      include: [{ model: Product }]
+    });
+    res.status(200).json(remainingTagData);
+  }
+  catch(error) {
+    //console.error(error);
+    res.status(400).json(error);
+  }
 });
 
 module.exports = router;
