@@ -1,10 +1,10 @@
 # Me-Commerce
 
 ## Description
-
+An ecommerce web backend in Express using Sequelize.
 
 ## Result
-
+[Click here for the video demo!](https://drive.google.com/file/d/1WIeDQ-yxlbhWGAT2G2Bmemj0l83lHHHj/view?usp=sharing)
 
 ## User Story
 AS A manager at an internet retail company,
@@ -35,25 +35,25 @@ THEN I am able to successfully create, update, and delete data in my database.
 - [x] Create schema
 - [x] Successfully seed tables
 - [ ] Insomnia requests
-    - [ ] categories
-        - [x] GET all
-        - [x] GET /:id
-        - [x] POST
-        - [ ] PUT
-        - [x] DELETE
-    - [ ] products
-        - [x] GET all
-        - [x] GET /:id
-        - [x] POST
-        - [ ] PUT
-        - [x] DELETE
-    - [ ] tags
+    - [x] categories
         - [x] GET all
         - [x] GET /:id
         - [x] POST
         - [x] PUT
         - [x] DELETE
-- [ ] Video demo of functionality + acceptance criteria
-    - [ ] Include in README
+    - [ ] products
+        - [x] GET all
+        - [x] GET /:id
+        - [x] POST
+        - [x] PUT
+        - [x] DELETE
+    - [x] tags
+        - [x] GET all
+        - [x] GET /:id
+        - [x] POST
+        - [x] PUT
+        - [x] DELETE
+- [x] Video demo of functionality + acceptance criteria
+    - [x] Include in README
 
 

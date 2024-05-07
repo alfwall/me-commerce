@@ -80,7 +80,7 @@ router.put('/:id', (req, res) => {
   })
     .then((product) => {
       if (req.body.tagIds && req.body.tagIds.length) {
-
+          console.log("TagIDs exist!")
         ProductTag.findAll({
           where: { product_id: req.params.id }
         }).then((productTags) => {
