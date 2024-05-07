@@ -38,19 +38,19 @@ THEN I am able to successfully create, update, and delete data in my database.
     - [ ] categories
         - [x] GET all
         - [x] GET /:id
-        - [ ] POST
+        - [x] POST
         - [ ] PUT
         - [ ] DELETE
     - [ ] products
         - [x] GET all
-        - [ ] GET /:id
-        - [ ] POST
+        - [x] GET /:id
+        - [x] POST
         - [ ] PUT
         - [ ] DELETE
     - [ ] tags
         - [x] GET all
-        - [ ] GET /:id
-        - [ ] POST
+        - [x] GET /:id
+        - [x] POST
         - [ ] PUT
         - [ ] DELETE
 - [ ] Video demo of functionality + acceptance criteria
