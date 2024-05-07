@@ -34,14 +34,14 @@ THEN I am able to successfully create, update, and delete data in my database.
 - [x] Rename and edit .env file
 - [x] Create schema
 - [x] Successfully seed tables
-- [ ] Insomnia requests
+- [x] Insomnia requests
     - [x] categories
         - [x] GET all
         - [x] GET /:id
         - [x] POST
         - [x] PUT
         - [x] DELETE
-    - [ ] products
+    - [x] products
         - [x] GET all
         - [x] GET /:id
         - [x] POST
